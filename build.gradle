@@ -23,13 +23,17 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
-	implementation 'io.netty:netty-resolver-dns-native-macos'
+//	implementation 'io.netty:netty-resolver-dns-native-macos'
 //	implementation("io.netty:netty-resolver-dns-native-macos:2.0.30.Final:osx-aarch_64")
+	implementation 'io.netty:netty-resolver-dns-native-macos:4.1.68.Final:osx-aarch_64'
 
-//	runtimeOnly("io.netty:netty-resolver-dns-native-macos:osx-x86_64")
+
+	// https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
 
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
